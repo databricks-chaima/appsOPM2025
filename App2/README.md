@@ -45,8 +45,8 @@ This app displays inspection results from CCD cameras on end-of-line welding sta
 
 | Field | Type | Description |
 |-------|------|-------------|
-| inspection_id | String | Unique ID (e.g., "INSP-2025-001234") |
-| factory_id | String | Factory identifier (e.g., "WUH-G426") |
+| inspection_id | String | Unique ID  |
+| factory_id | String | Factory identifier |
 | camera_id | String | Camera identifier (e.g., "CAM-01") |
 | timestamp | Timestamp | Full timestamp of inspection |
 | image_path | String | Path to image in Unity Catalog Volumes |
