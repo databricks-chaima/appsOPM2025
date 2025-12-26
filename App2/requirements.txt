@@ -1,0 +1,6 @@
+python-dotenv
+databricks-sdk
+fastapi
+uvicorn
+jinja2
+psycopg2-binary

@@ -1,0 +1,322 @@
+[
+  {
+    "factory_id": "WUH-G426",
+    "region": "WUH",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "WUH-A79",
+    "region": "WUH",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "WUH-L42P",
+    "region": "WUH",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "WUH-BX11",
+    "region": "WUH",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "WUH-KX11",
+    "region": "WUH",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "YAN-YT01",
+    "region": "YAN",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "YAN-YT02",
+    "region": "YAN",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "YAN-YT03",
+    "region": "YAN",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "YAN-YT04",
+    "region": "YAN",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "YAN-YT05",
+    "region": "YAN",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "NGB-NB10",
+    "region": "NGB",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "NGB-NB11",
+    "region": "NGB",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "NGB-NB12",
+    "region": "NGB",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "NGB-NB13",
+    "region": "NGB",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "NGB-NB14",
+    "region": "NGB",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "GUA-GZ01",
+    "region": "GUA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "GUA-GZ02",
+    "region": "GUA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "GUA-GZ03",
+    "region": "GUA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "GUA-GZ04",
+    "region": "GUA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "GUA-GZ05",
+    "region": "GUA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHE-SY01",
+    "region": "SHE",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHE-SY02",
+    "region": "SHE",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHE-SY03",
+    "region": "SHE",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHE-SY04",
+    "region": "SHE",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHE-SY05",
+    "region": "SHE",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "KYO-KY01",
+    "region": "KYO",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "KYO-KY02",
+    "region": "KYO",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "KYO-KY03",
+    "region": "KYO",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "KYO-KY04",
+    "region": "KYO",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "KYO-KY05",
+    "region": "KYO",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "RAY-RY01",
+    "region": "RAY",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "RAY-RY02",
+    "region": "RAY",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "RAY-RY03",
+    "region": "RAY",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "RAY-RY04",
+    "region": "RAY",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "RAY-RY05",
+    "region": "RAY",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHA-SH01",
+    "region": "SHA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHA-SH02",
+    "region": "SHA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHA-SH03",
+    "region": "SHA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHA-SH04",
+    "region": "SHA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  },
+  {
+    "factory_id": "SHA-SH05",
+    "region": "SHA",
+    "cameras": [
+      "CAM-01",
+      "CAM-02"
+    ]
+  }
+]

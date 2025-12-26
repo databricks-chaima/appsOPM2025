@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Control Cockpit - OP Mobility</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="header-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 11L12 14L22 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="header-title">
+                    <h1>Quality Control Cockpit</h1>
+                    <p class="header-subtitle">OP Mobility Manufacturing Intelligence</p>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-date" id="currentDate"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="section-header">Navigation</h3>
+                
+                <div class="form-group">
+                    <label for="regionSelect">Region</label>
+                    <select id="regionSelect" class="form-control">
+                        <option value="">All Regions</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="factorySelect">Factory</label>
+                    <select id="factorySelect" class="form-control">
+                        <option value="">All Factories</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cameraSelect">Camera</label>
+                    <select id="cameraSelect" class="form-control">
+                        <option value="">All Cameras</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="section-header">Filters</h3>
+                
+                <div class="form-group">
+                    <label for="searchInput">Search Inspection ID</label>
+                    <input type="text" id="searchInput" class="form-control" placeholder="INSP-2025-...">
+                </div>
+
+                <div class="form-group">
+                    <label for="predictionSelect">Prediction</label>
+                    <select id="predictionSelect" class="form-control">
+                        <option value="">All</option>
+                        <option value="OK">OK</option>
+                        <option value="KO">KO</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="defectSelect">Defect Type</label>
+                    <select id="defectSelect" class="form-control">
+                        <option value="">All</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="perPageSelect">Items per page</label>
+                    <select id="perPageSelect" class="form-control">
+                        <option value="8" selected>8</option>
+                        <option value="12">12</option>
+                        <option value="20">20</option>
+                        <option value="40">40</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dateFrom">Date From</label>
+                    <input type="date" id="dateFrom" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="dateTo">Date To</label>
+                    <input type="date" id="dateTo" class="form-control">
+                </div>
+
+                <button id="applyFilters" class="btn btn-primary">Apply Filters</button>
+                <button id="resetFilters" class="btn btn-secondary">Reset</button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Stats Cards -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalCount">0</div>
+                    <div class="stat-label">Total Inspections</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="filteredCount">0</div>
+                    <div class="stat-label">Filtered Results</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value stat-value-ok" id="okCount">0</div>
+                    <div class="stat-label">OK</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value stat-value-ko" id="koCount">0</div>
+                    <div class="stat-label">KO</div>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                <div class="spinner"></div>
+                <p>Loading inspections...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+            <!-- Inspection Grid -->
+            <div id="inspectionGrid" class="inspection-grid"></div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="pagination" style="display: none;">
+                <button id="prevPage" class="btn btn-secondary" disabled>Previous</button>
+                <span id="pageInfo" class="page-info">Page 1 of 1</span>
+                <button id="nextPage" class="btn btn-secondary" disabled>Next</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
+

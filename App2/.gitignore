@@ -1,0 +1,48 @@
+# Standard Python ignores
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.pyo
+*.pyd
+*.pdb
+*.log
+*.sqlite3
+*.db
+*.pot
+*.mo
+*.coverage
+.coverage.*
+.cache
+.tox/
+.nox/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Environment files
+.env
+.venv/
+# Apply to backend as well
+/backend/__pycache__/
+/backend/.env
+/backend/.venv/
+/backend/*.pyc
+/backend/*.pyo
+/backend/*.pyd
+/backend/*.pdb
+/backend/.pytest_cache/
+/backend/.mypy_cache/
+/backend/.dmypy.json
+/backend/.pyre/ 

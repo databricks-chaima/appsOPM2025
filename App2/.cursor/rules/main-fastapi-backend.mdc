@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+
+This is a fastapi app, so the .env and the requirements.txt are at the root of this directory. the app.py file should be too. Keep code simple, standard, and modularized. when we get to >3 endpoints, follow the standard route/controller pattern. always leverage singleton services when possible, falling back to funtional/closure-based services. services should go in the /services folder.
+
+wrap endpoints in a try/catch to ensure the app doesn't crash.
+
+use uvicorn to spin the app up on port 8000.

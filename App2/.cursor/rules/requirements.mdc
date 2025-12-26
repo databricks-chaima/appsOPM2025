@@ -1,0 +1,6 @@
+---
+globs: requirements.txt
+alwaysApply: false
+---
+
+Do not add anything to requirements.txt -- you do not need anything else to complete the job.

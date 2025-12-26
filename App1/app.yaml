@@ -1,0 +1,27 @@
+command: [
+  "streamlit", 
+  "run",
+  "app.py"
+]
+
+env:
+  # SQL Warehouse
+  - name: 'DATABRICKS_WAREHOUSE_ID'
+    value: '6457618d1c009dd6'
+  
+  # Service Principal (for Lakebase authentication)
+  - name: 'DATABRICKS_CLIENT_ID'
+    value: 'f5d6bbf5-373b-4e21-9797-7f5d4e34acfa'
+  # Note: DATABRICKS_CLIENT_SECRET should be in .env file for local dev
+  
+  # Lakebase PostgreSQL Configuration
+  - name: 'PGHOST'
+    value: 'instance-8164e3aa-383c-4f66-ae19-05fa86bb3390.database.cloud.databricks.com'
+  - name: 'PGPORT'
+    value: '5432'
+  - name: 'PGDATABASE'
+    value: 'serverless_opm_catalog'
+  - name: 'PGUSER'
+    value: 'f5d6bbf5-373b-4e21-9797-7f5d4e34acfa'
+  - name: 'PGSSLMODE'
+    value: 'require'
