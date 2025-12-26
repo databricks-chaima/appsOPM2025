@@ -122,9 +122,9 @@ To deploy on Databricks Apps:
 
 | Field | Type | Description |
 |-------|------|-------------|
-| inspection_id | String | Unique ID (e.g., "INSP-2025-001234") |
-| factory_id | String | Factory identifier (e.g., "WUH-G426") |
-| camera_id | String | Camera identifier (e.g., "CAM-01") |
+| inspection_id | String | Unique ID  |
+| factory_id | String | Factory identifier |
+| camera_id | String | Camera identifier |
 | timestamp | Timestamp | Full timestamp of inspection |
 | image_path | String | Path to image in Unity Catalog Volumes |
 | prediction | String | "OK" or "KO" |
